@@ -35,42 +35,44 @@
         <div class="home-text">
           <h1>Kis Tamás</h1>
           <h2>Frontend webfejlesztő</h2>
-          <a href="contact" class="home-button">Kapcsolat</a>
+          <a href="#contact" class="home-button">Kapcsolat</a>
         </div>
         <div class="home-img">
           <img src="./images/kis_tamas.png" alt="Kis Tamás" />
         </div>
       </section>
       <section id="info">
-        <header>
+        <div>
           <h2>Üdvözlöm!</h2>
           <h3>A nevem Kis Tamás</h3>
-        </header>
-        <p>
-          <!-- <strong>Kis Tamás</strong> vagyok, már
+          <p>
+            <!-- <strong>Kis Tamás</strong> vagyok, már
           <strong>hetek óta</strong> foglalkozom frontend webfejlesztéssel.
           Szakterületem weboldalak és webalkalmazások készítése és karbantartása
           <strong>lesz</strong>. -->
-          Egy régi álmomat szeretném valóra váltani azzal, hogy frontend
-          fejlesztőként belépek az IT világába. Szenzációs, hogy a hobbim egyben
-          a munkám is lehet és még fizetést is kaphatok érte! A kreatív oldalán
-          kívül az is nagyon tetszik ebben a karrierben, hogy egy soha véget nem
-          érő tanulási folyamat is társul hozzá. A ProgramozásKarrier.hu
-          Karrierváltó Mentorprogramjának elvégzése után a következő ismeretre
-          tettem szert: HTML5, CSS, Sass, Javascript, React, Node. Most egy
-          junior webfejlesztő pozíciót keresek, hogy szakemberek között
-          továbbfejleszthessem a tudásomat és élesben is alkalmazhassam a
-          megtanultakat.
-        </p>
+            Egy régi álmomat szeretném valóra váltani azzal, hogy frontend
+            fejlesztőként belépek az IT világába. Szenzációs, hogy a hobbim
+            egyben a munkám is lehet és még fizetést is kaphatok érte! A kreatív
+            oldalán kívül az is nagyon tetszik ebben a karrierben, hogy egy soha
+            véget nem érő tanulási folyamat is társul hozzá. A
+            ProgramozásKarrier.hu Karrierváltó Mentorprogramjának elvégzése után
+            a következő ismeretre tettem szert: HTML5, CSS, Sass, Javascript,
+            React, Node. Most egy junior webfejlesztő pozíciót keresek, hogy
+            szakemberek között továbbfejleszthessem a tudásomat és élesben is
+            alkalmazhassam a megtanultakat.
+          </p>
+        </div>
+        <div class="info-skills">
+          <p><i class="fa-brands fa-html5"></i></p>
+          <p><i class="fa-brands fa-css3-alt"></i></p>
+          <p><i class="fa-brands fa-square-js"></i></p>
+        </div>
       </section>
       <section id="projects">
-        <header>
-          <h2>Projektek</h2>
-        </header>
-        <section class="project-container">
-          <header>
-            <h3>Queen rajongói oldal</h3>
-          </header>
+        <h2>Projektek</h2>
+        <div class="project-container">
+          <h3>Queen rajongói oldal</h3>
+          <img src="./images/queen.png" alt="My Queen page" />
           <p>
             Lassan negyven éve vagyok rajongója a
             <a href="https://www.queenonline.com" target="_blank">Queen</a>
@@ -86,29 +88,25 @@
             target="_blank"
             >Queen rajongói oldal</a
           >
-        </section>
-        <section>
-          <header>
-            <h3>To-do lista</h3>
-          </header>
+        </div>
+        <div>
+          <h3>To-do lista</h3>
+          <img src="./images/project.jpg" alt="Project" />
           <p>Gondolom ez lesz majd az egyik első saját alkalmazásom.</p>
           <a href="#"><i class="fa-brands fa-github"></i></a>
           <a href="#">To-do lista</a>
-        </section>
-        <section>
-          <header>
-            <h3>Projekt</h3>
-            <p>Projekt részletes leírása</p>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#">Projekt</a>
-          </header>
-        </section>
+        </div>
+        <div>
+          <h3>Projekt</h3>
+          <img src="./images/project.jpg" alt="Project" />
+          <p>Projekt részletes leírása</p>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#">Projekt</a>
+        </div>
       </section>
       <section id="contact">
-        <header>
-          <h2>Kapcsolat</h2>
-        </header>
-        <section>
+        <h2>Kapcsolat</h2>
+        <div>
           <p>
             Amennyiben felkeltettem érdeklődését, vegye fel velem a kapcsolatot
             az alábbi elérhetőségek egyikén, vagy küldjön egy üzenetet!
@@ -154,7 +152,7 @@ Hagyjon üzenetet!</textarea
             <input type="reset" value="Törlés" />
           </form>
           <p>A csillaggal (*) jelölt mezők kitöltése kötelező!</p>
-        </section>
+        </div>
         <section>
           <a href="mailto:t.kis502@gmail.com" target="_blank"
             ><i class="fa-regular fa-envelope"></i
@@ -174,10 +172,12 @@ Hagyjon üzenetet!</textarea
     <hr />
     <footer>
       <p>
-        <a href="#home"><i class="fa-solid fa-house"></i></a>
         2023 Ezt az oldalt
         <a href="mailto:t.kis502@gmail.com" target="_blank">Kis Tamás</a>
         készítette. <span>&copy;</span> Minden jog fenntartva.
+      </p>
+      <p>
+        <a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a>
       </p>
     </footer>
   </body>

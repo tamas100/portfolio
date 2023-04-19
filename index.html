@@ -18,6 +18,13 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -25,169 +32,187 @@
   <body>
     <header class="container">
       <nav class="header-navigation">
-        <img src="./images/logo-color-small.png" alt="logo" />
-        <ul class="nav-menu-list">
+        <img src="./images/logo-no-background-small.png" alt="logo" />
+        <ul class="nav-menu-list" id="menu-list">
           <li><a href="#home">Főoldal</a></li>
           <li><a href="#info">Rólam</a></li>
           <li><a href="#projects">Projektek</a></li>
           <li><a href="#contact">Kapcsolat</a></li>
-          <!-- <li><a href="./english.html">English</a></li> -->
         </ul>
         <div id="button-js" class="menu-button">
           <i id="button-icon" class="bi bi-list"></i>
         </div>
       </nav>
     </header>
+    <script src="./main.js"></script>
     <main>
+      <!-- *******************Home*********************************************-->
       <section id="home" class="container section-home">
-        <div class="home-text">
+        <div class="home-img">
+          <img
+            src="./images/kis_tamas-head.png"
+            alt="Kis Tamás"
+            class="profile"
+          />
+        </div>
+        <div class="flex-container-column">
           <h1>Kis Tamás</h1>
           <h2>Frontend webfejlesztő</h2>
-          <a href="#contact" class="home-button">Kapcsolat</a>
-        </div>
-        <div class="home-img">
-          <img src="./images/kis_tamas-head.png" alt="Kis Tamás" />
+          <a href="#contact" class="btn btn-success">Kapcsolat</a>
         </div>
       </section>
+      <!-- *******************Info*********************************************-->
       <section id="info" class="container section-info">
-        <div>
-          <h2>Üdvözlöm!</h2>
-          <h3>A nevem Kis Tamás</h3>
+        <div class="flex-container-column">
+          <h2>Üdvözlöm,</h2>
+          <h3>Kis Tamás vagyok.</h3>
           <p>
-            <!-- <strong>Kis Tamás</strong> vagyok, már
-          <strong>hetek óta</strong> foglalkozom frontend webfejlesztéssel.
-          Szakterületem weboldalak és webalkalmazások készítése és karbantartása
-          <strong>lesz</strong>. -->
             Egy régi álmomat szeretném valóra váltani azzal, hogy frontend
             fejlesztőként belépek az IT világába. Szenzációs, hogy a hobbim
             egyben a munkám is lehet és még fizetést is kaphatok érte! A kreatív
             oldalán kívül az is nagyon tetszik ebben a karrierben, hogy egy soha
             véget nem érő tanulási folyamat is társul hozzá. A
             ProgramozásKarrier.hu Karrierváltó Mentorprogramjának elvégzése után
-            a következő ismeretre tettem szert: HTML5, CSS, Sass, Javascript,
-            React, Node. Most egy junior webfejlesztő pozíciót keresek, hogy
-            szakemberek között továbbfejleszthessem a tudásomat és élesben is
-            alkalmazhassam a megtanultakat.
+            a következő ismeretekre fogok szert tenni: HTML5, CSS, Sass,
+            Javascript, React, Node. Most egy junior webfejlesztő pozíciót
+            keresek, hogy szakemberek között továbbfejleszthessem a tudásomat és
+            élesben is alkalmazhassam a megtanultakat.
           </p>
         </div>
         <div class="info-skills">
-          <p><i class="fa-brands fa-html5"></i></p>
-          <p><i class="fa-brands fa-css3-alt"></i></p>
-          <p><i class="fa-brands fa-square-js"></i></p>
+          <p><i class="fa-brands fa-html5 btn btn-secondary btn-big"></i></p>
+          <p><i class="fa-brands fa-css3-alt btn btn-secondary btn-big"></i></p>
+          <p>
+            <i class="fa-brands fa-square-js btn btn-secondary btn-big"></i>
+          </p>
         </div>
       </section>
+      <!-- *******************Project*********************************************-->
       <section id="projects" class="container section-projects">
-        <h2>Projektek</h2>
-        <div class="project-container">
+        <div class="flex-container-column">
+          <h2>Projektek</h2>
+        </div>
+        <div class="container flex-container-column">
           <h3>Queen rajongói oldal</h3>
           <img src="./images/queen.png" alt="My Queen page" />
           <p>
             Lassan negyven éve vagyok rajongója a
             <a href="https://www.queenonline.com" target="_blank">Queen</a>
             együttesnek és arra gondoltam, hogy jó téma lenne gyakorolni a
-            webfejlesztést. Tanulmányaim első hete után készült ez az alap
+            webfejlesztést. Tanulmányaim első pár hete után készült ez az alap
             változat.
           </p>
-          <a href="https://github.com/tamas100/queen"
+          <a
+            href="https://github.com/tamas100/queen"
+            class="btn btn-primary btn-big"
             ><i class="fa-brands fa-github"></i
           ></a>
           <a
             href="https://tamas100.github.io/queen/index-hu.html#top-of-page"
             target="_blank"
+            class="btn btn-danger"
             >Queen rajongói oldal</a
           >
         </div>
-        <div>
+        <div class="container flex-container-column">
           <h3>To-do lista</h3>
-          <img src="./images/project.jpg" alt="Project" />
+          <img src="./images/todo.jpg" alt="Project" />
           <p>Gondolom ez lesz majd az egyik első saját alkalmazásom.</p>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#">To-do lista</a>
+          <a href="#" class="btn btn-primary"
+            ><i class="fa-brands fa-github btn-big"></i
+          ></a>
+          <a href="#" class="btn btn-danger">To-do lista</a>
         </div>
-        <div>
+        <div class="container flex-container-column">
           <h3>Projekt</h3>
           <img src="./images/project.jpg" alt="Project" />
           <p>Projekt részletes leírása</p>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#">Projekt</a>
+          <a href="#" class="btn btn-primary"
+            ><i class="fa-brands fa-github btn-big"></i
+          ></a>
+          <a href="#" class="btn btn-danger">Projekt</a>
         </div>
       </section>
-      <section id="contact" class="container section-contact">
-        <h2>Kapcsolat</h2>
-        <div>
-          <p>
+      <!-- *******************Contact*********************************************-->
+      <section id="contact" class="container">
+        <div class="div-contact">
+          <h2>Kapcsolat</h2>
+          <p class="contact-text">
             Amennyiben felkeltettem érdeklődését, vegye fel velem a kapcsolatot
             az alábbi elérhetőségek egyikén, vagy küldjön egy üzenetet!
           </p>
           <form action="https://formspree.io/f/mrgvaejo" method="post">
-            <label>
-              Vezetéknév*:
+            <label class="form-label">
+              Vezetéknév*
               <input
                 type="text"
                 name="last-name"
                 placeholder="Vezetéknév"
                 required
+                class="form-input"
               />
             </label>
-            <label>
-              Keresztnév*:
+            <label class="form-label">
+              Keresztnév*
               <input
                 type="text"
                 name="first-name"
                 placeholder="Keresztnév"
                 required
+                class="form-input"
               />
             </label>
-            <label>
-              E-mail cím*:
+            <label class="form-label">
+              E-mail cím*
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail cím"
                 required
+                class="form-input"
               />
             </label>
-            <label>
-              Tárgy:
-              <input type="text" name="subject" placeholder="Tárgy" />
+            <label class="form-label">
+              Üzenet
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                class="form-textarea"
+                placeholder="Ide írhatja az üzenetet..."
+              ></textarea>
             </label>
-            <label
-              >Üzenet:<textarea name="message" cols="30" rows="10">
-Hagyjon üzenetet!</textarea
-              >
-            </label>
-            <input type="submit" value="Beküldés" />
-            <input type="reset" value="Törlés" />
+            <div>
+              <input type="reset" value="Törlés" class="btn btn-success" />
+              <input type="submit" value="Beküldés" class="btn btn-success" />
+            </div>
           </form>
-          <p>A csillaggal (*) jelölt mezők kitöltése kötelező!</p>
+          <p class="contact-text">
+            A csillaggal (*) jelölt mezők kitöltése kötelező!
+          </p>
         </div>
-        <section>
+        <div class="social-media">
           <a href="mailto:t.kis502@gmail.com" target="_blank"
-            ><i class="fa-regular fa-envelope"></i
+            ><i class="fa-regular fa-envelope btn btn-primary btn-big"></i
           ></a>
           <a href="https://github.com/tamas100" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://codepen.io/your-work" target="_blank"
-            ><i class="fa-brands fa-codepen"></i
+            ><i class="fa-brands fa-github btn btn-primary btn-big"></i
           ></a>
           <a href="https://www.linedin.com"
-            ><i class="fa-brands fa-linkedin-in"></i
+            ><i class="fa-brands fa-linkedin-in btn btn-primary btn-big"></i
           ></a>
-        </section>
+        </div>
       </section>
     </main>
+    <!-- *******************Footer*********************************************-->
     <hr />
     <footer class="container">
-      <p>
-        2023 Ezt az oldalt
-        <a href="mailto:t.kis502@gmail.com" target="_blank">Kis Tamás</a>
-        készítette. <span>&copy;</span> Minden jog fenntartva.
-      </p>
-      <p>
-        <a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a>
-      </p>
+      <div class="flex-container">
+        <p>Copyright &copy; 2023 Kis Tamás</p>
+        <a href="#home"
+          ><i class="fa-solid fa-arrow-up btn-success btn-big nav-top"></i
+        ></a>
+      </div>
     </footer>
-    <script src="./main.js"></script>
   </body>
 </html>

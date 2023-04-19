@@ -182,7 +182,8 @@ p {
 }
 
 .flex-container-column,
-.div-contact {
+.div-contact,
+.section-home {
   padding: 2rem 0 2rem;
   display: flex;
   flex-direction: column;

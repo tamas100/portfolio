@@ -59,10 +59,22 @@ p {
   border-style: solid;
   text-align: center;
   min-width: 11rem;
+  transition: transform 100ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.1);
+  border: 2px solid var(--main-grey);
 }
 
 .btn-big {
   font-size: 3.6rem;
+}
+
+.info-skills i {
+  font-size: 5rem;
 }
 
 .btn-socal-media {
@@ -217,6 +229,8 @@ p {
 .contact-form {
   width: 80%;
   margin: 0 auto;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
 .form-label {
@@ -234,6 +248,7 @@ p {
   width: 100%;
   /* max-width: 425px; */
   padding: 1.2rem 0.12rem;
+  /* margin: 0 6px; */
   font-size: 1.6rem;
   outline: none;
   color: #55595c;

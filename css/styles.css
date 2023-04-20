@@ -16,6 +16,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
   padding-top: 8rem;

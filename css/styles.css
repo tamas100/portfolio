@@ -49,23 +49,24 @@ p {
 }
 /* -------------- Gombok */
 .btn {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   text-transform: uppercase;
-  padding: 12px 24px;
-  margin: 4px;
+  text-decoration: none;
+  padding: 1.2rem 1.2rem;
+  margin: 0.4rem;
   font-weight: 600;
   border-style: solid;
-}
-
-.btn-small {
-  font-size: 10px;
-  padding: 8px 16px;
+  text-align: center;
+  min-width: 11rem;
 }
 
 .btn-big {
   font-size: 3.6rem;
-  padding: ;
+}
+
+.btn-socal-media {
+  min-width: 0;
 }
 
 .btn-primary {
@@ -92,11 +93,6 @@ p {
   border-color: var(--main-red);
 }
 
-.container {
-  padding: 1rem 3rem;
-  margin: 0 auto;
-}
-
 /* -------------- Fejléc és navigáció */
 .header-navigation img {
   width: 80px;
@@ -113,7 +109,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.2rem 0.5rem;
   z-index: 0;
 }
 
@@ -126,7 +122,7 @@ p {
   margin-right: 4rem;
   padding: 0.5rem;
   transform: translateY(-60rem);
-  background-color: var(--main-red);
+  background-color: var(--main-green);
   position: absolute;
   width: 100vw;
   top: 10rem;
@@ -143,8 +139,8 @@ p {
   text-decoration: none;
   color: var(--main-grey);
   font-weight: bold;
-  font-size: 5rem;
-  text-shadow: 2px 2px #cdd2d5;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem #cdd2d5;
 }
 
 .header-navigation a:hover {
@@ -167,8 +163,8 @@ p {
 .menu-button:hover {
   cursor: pointer;
   background-color: #fff;
-  color: var(--main-red);
-  box-shadow: 2px 2px 3px black;
+  color: var(--main-green);
+  box-shadow: 0.2rem 0.2rem 0.3rem black;
 }
 
 .bi-list {
@@ -184,7 +180,8 @@ p {
 
 .flex-container-column,
 .div-contact,
-.section-home {
+.section-home
+/* .section-contact*/ {
   padding: 2rem 0 2rem;
   display: flex;
   flex-direction: column;
@@ -207,7 +204,7 @@ p {
   text-align: center;
 }
 
-form {
+/* form {
   line-height: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -215,6 +212,11 @@ form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+} */
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .form-label {
@@ -230,8 +232,8 @@ form {
 
 .form-input {
   width: 100%;
-  max-width: 425px;
-  padding: 1.2rem 2.4px;
+  /* max-width: 425px; */
+  padding: 1.2rem 0.12rem;
   font-size: 1.6rem;
   outline: none;
   color: #55595c;
@@ -261,9 +263,9 @@ form {
   resize: vertical;
 }
 
-.label-textarea {
+.form-button-div {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .social-media {

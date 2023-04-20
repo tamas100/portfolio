@@ -134,69 +134,76 @@
         </div>
       </section>
       <!-- *******************Contact*********************************************-->
-      <section id="contact" class="container">
+      <section id="contact" class="container section-contact">
         <div class="div-contact">
           <h2>Kapcsolat</h2>
           <p class="contact-text">
             Amennyiben felkeltettem érdeklődését, vegye fel velem a kapcsolatot
             az alábbi elérhetőségek egyikén, vagy küldjön egy üzenetet!
           </p>
-          <form action="https://formspree.io/f/mrgvaejo" method="post">
-            <label class="form-label">
-              Vezetéknév*
-              <input
-                type="text"
-                name="last-name"
-                placeholder="Vezetéknév"
-                required
-                class="form-input"
-              />
-            </label>
-            <label class="form-label">
-              Keresztnév*
-              <input
-                type="text"
-                name="first-name"
-                placeholder="Keresztnév"
-                required
-                class="form-input"
-              />
-            </label>
-            <label class="form-label">
-              E-mail cím*
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail cím"
-                required
-                class="form-input"
-              />
-            </label>
-            <label class="form-label">
-              Üzenet
-              <textarea
-                name="message"
-                cols="30"
-                rows="10"
-                class="form-textarea"
-                placeholder="Ide írhatja az üzenetet..."
-              ></textarea>
-            </label>
-            <div>
-              <input type="reset" value="Törlés" class="btn btn-success" />
-              <input type="submit" value="Beküldés" class="btn btn-success" />
-            </div>
-          </form>
-          <p class="contact-text">
-            A csillaggal (*) jelölt mezők kitöltése kötelező!
-          </p>
         </div>
+        <form
+          action="https://formspree.io/f/mrgvaejo"
+          method="post"
+          class="contact-form"
+        >
+          <label class="form-label">
+            Vezetéknév*
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Vezetéknév"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label">
+            Keresztnév*
+            <input
+              type="text"
+              name="first-name"
+              placeholder="Keresztnév"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label">
+            E-mail cím*
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail cím"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label">
+            Üzenet
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="form-input"
+              placeholder="Ide írhatja az üzenetet..."
+            ></textarea>
+          </label>
+          <div class="form-button-div">
+            <input type="reset" value="Törlés" class="btn btn-danger" />
+            <input type="submit" value="Beküldés" class="btn btn-success" />
+          </div>
+        </form>
+        <p class="contact-text">
+          A csillaggal (*) jelölt mezők kitöltése kötelező!
+        </p>
+
         <div class="social-media">
-          <a href="mailto:t.kis502@gmail.com" target="_blank"
-            ><i class="fa-regular fa-envelope btn btn-primary btn-big"></i
-          ></a>
           <a href="https://github.com/tamas100" target="_blank"
             ><i class="fa-brands fa-github btn btn-primary btn-big"></i
+          ></a>
+          <a href="mailto:t.kis502@gmail.com" target="_blank"
+            ><i
+              class="fa-regular fa-envelope btn btn-primary btn-big btn-socal-media"
+            ></i
           ></a>
           <a href="https://www.linedin.com"
             ><i class="fa-brands fa-linkedin-in btn btn-primary btn-big"></i

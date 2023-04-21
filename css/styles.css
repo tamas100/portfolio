@@ -214,23 +214,15 @@ p {
 
 .contact-text {
   text-align: center;
+  padding: 2rem 0;
 }
-
-/* form {
-  line-height: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-} */
 
 .contact-form {
   width: 80%;
   margin: 0 auto;
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  padding: 0 1.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .form-label {

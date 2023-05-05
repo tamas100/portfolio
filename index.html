@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
+    <header>
       <nav class="header-navigation">
         <img src="./images/logo-no-background-small.png" alt="logo" />
         <ul class="nav-menu-list" id="menu-list">
@@ -48,22 +48,25 @@
     <main>
       <!-- *******************Home*********************************************-->
       <section id="home" class="container section-home">
-        <div class="home-img">
-          <img
-            src="./images/kis_tamas-head.png"
-            alt="Kis Tamás"
-            class="profile"
-          />
-        </div>
-        <div class="flex-container-column">
-          <h1>Kis Tamás</h1>
-          <h2>Frontend webfejlesztő</h2>
-          <a href="#contact" class="btn btn-primary">Kapcsolat</a>
+        
+        <div class="div-home">
+          <div class="home-img">
+            <img
+              src="./images/kis_tamas-head.png"
+              alt="Kis Tamás"
+              class="profile-img"
+            />
+          </div>
+          <div class="home-text">
+            <h1>Kis Tamás</h1>
+            <h2>Frontend webfejlesztő</h2>
+            <a href="#contact" class="btn btn-primary">Kapcsolat</a>
+          </div>
         </div>
       </section>
       <!-- *******************Info*********************************************-->
       <section id="info" class="container section-info">
-        <div class="flex-container-column">
+        <div class="div-info">
           <h2>Üdvözlöm,</h2>
           <h3>Kis Tamás vagyok.</h3>
           <p>
@@ -96,32 +99,36 @@
       </section>
       <!-- *******************Project*********************************************-->
       <section id="projects" class="container section-projects">
-        <div class="flex-container-column">
+        <div class="div-projects">
           <h2>Projektek</h2>
         </div>
-        <div class="container flex-container-column">
+        <div class="container div-projects">
           <h3>Queen rajongói oldal</h3>
-          <img src="./images/queen.png" alt="My Queen page" />
-          <p>
-            Lassan negyven éve vagyok rajongója a
-            <a href="https://www.queenonline.com" target="_blank">Queen</a>
-            együttesnek és arra gondoltam, hogy jó téma lenne gyakorolni a
-            webfejlesztést. Tanulmányaim első pár hete után készült ez az alap
-            változat.
-          </p>
-          <a
-            href="https://github.com/tamas100/queen"
-            class="btn btn-primary btn-big"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://tamas100.github.io/queen/index-hu.html#top-of-page"
-            target="_blank"
-            class="btn btn-primary"
-            >Queen rajongói oldal</a
-          >
+          <div class="div-projects-content">
+            <img src="./images/queen.png" alt="My Queen page" />
+            <p>
+              Lassan negyven éve vagyok rajongója a Queen
+              <!-- <a href="https://www.queenonline.com" target="_blank">Queen</a> -->
+              együttesnek és arra gondoltam, hogy jó téma lenne gyakorolni a
+              webfejlesztést. Tanulmányaim első pár hete után készült ez az alap
+              változat.
+            </p>
+          </div>
+          <div class="projects-buttons">
+            <a
+              href="https://github.com/tamas100/queen"
+              class="btn btn-primary btn-big"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://tamas100.github.io/queen/index-hu.html#top-of-page"
+              target="_blank"
+              class="btn btn-primary"
+              >Queen rajongói oldal</a
+            >
+          </div>
         </div>
-        <div class="container flex-container-column">
+        <div class="container div-projects">
           <h3>To-do lista</h3>
           <img src="./images/todo.jpg" alt="Project" />
           <p>Gondolom ez lesz majd az egyik első saját alkalmazásom.</p>
@@ -130,7 +137,7 @@
           ></a>
           <a href="#" class="btn btn-primary">To-do lista</a>
         </div>
-        <div class="container flex-container-column">
+        <div class="container div-projects">
           <h3>Projekt</h3>
           <img src="./images/project.jpg" alt="Project" />
           <p>Projekt részletes leírása</p>

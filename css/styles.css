@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 10px;
@@ -113,7 +118,6 @@ p {
 
 .header-navigation {
   position: fixed;
-  left: 0;
   top: 0;
   width: 100%;
   background-color: var(--main-yellow);
@@ -184,14 +188,19 @@ p {
 
 /* -------------- Main */
 
-.profile {
+.profile-img {
   border-radius: 50%;
   background-color: var(--main-grey);
 }
 
-.flex-container-column,
-.div-contact,
-.section-home {
+.div-projects,
+.div-projects,
+.div-projects-content,
+.projects-buttons,
+.div-info,
+.div-home,
+.home-text,
+.div-contact {
   padding: 2rem 0 2rem;
   display: flex;
   flex-direction: column;
@@ -215,7 +224,7 @@ p {
 }
 
 .section-projects img {
-  width: 30rem;
+  max-width: 800px;
 }
 
 /* -------------- Contact */
@@ -299,4 +308,60 @@ footer {
   right: 0rem;
   color: var(--main-grey);
   font-size: 3.6rem;
+}
+
+@media (min-width: 576px) {
+  .projects-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-button {
+    display: none;
+  }
+
+  .div-home {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .nav-menu-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    transform: translateY(0);
+    position: static;
+    background-color: var(--main-yellow);
+  }
+
+  .header-navigation a {
+    color: var(--main-grey);
+  }
+
+  .header-navigation a:hover {
+    color: var(--main-white);
+  }
+
+  .home-img {
+    min-width: 500px;
+    max-width: 600px;
+    flex-grow: 1;
+  }
+
+  .home-text {
+    flex-grow: 1;
+  }
+
+  .div-projects-content {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .div-projects-content p {
+    display: flex;
+    justify-content: ;
+  }
 }

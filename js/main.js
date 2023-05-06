@@ -5,13 +5,6 @@ let icon = document.getElementById("button-icon");
 button.addEventListener("click", Hmenu);
 OpenC.addEventListener("click", Hmenu)
 
-
-
-function proba() {
-    console.log("ProgramozásKarrier");    
-}
-
-
 function Hmenu() {
     OpenC.classList.toggle("active");
     if(OpenC.classList === "active") {

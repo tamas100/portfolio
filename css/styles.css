@@ -1,4 +1,4 @@
-/* ------------- Színek beállítása */
+/* ------------- Színek beállítása --------------------------------------*/
 :root {
   --main-red: #ef476f;
   --main-yellow: #ffd166;
@@ -7,34 +7,18 @@
   --main-grey: #073b4c;
   --main-white: ghostwhite;
 }
-
-/* -------------- Alapbeállítások */
+/* -------------- Alapbeállítások --------------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
+  font-size: 10px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
-  font-family: "Nunito Sans", sans-serif;
-  padding-top: 8rem;
-}
-
-body,
-html {
   scroll-padding-top: 10rem;
-}
-
-.container {
-  padding: 3rem 1.5rem;
-  margin: 0 auto;
 }
 
 h1 {
@@ -52,7 +36,7 @@ h3 {
 p {
   font-size: 2rem;
 }
-/* -------------- Gombok */
+/* -------------- Gombok ------------------------------------------------*/
 .btn {
   font-size: 1.2rem;
   line-height: 2.4rem;
@@ -60,7 +44,7 @@ p {
   text-decoration: none;
   padding: 0.5rem 1.2rem;
   margin: 0.4rem;
-  font-weight: 600;
+  font-weight: bold;
   border-style: solid;
   text-align: center;
   transition: transform 100ms;
@@ -73,18 +57,6 @@ p {
   transform: scale(1.1);
   outline: 2px solid var(--main-blue);
   border-color: var(--main-blue);
-}
-
-.btn-big {
-  font-size: 3rem;
-}
-
-.info-skills i {
-  font-size: 5rem;
-}
-
-.btn-socal-media {
-  min-width: 0;
 }
 
 .btn-primary {
@@ -110,13 +82,8 @@ p {
   color: var(--main-white);
   border-color: var(--main-red);
 }
-
-/* -------------- Fejléc és navigáció */
-.header-navigation img {
-  width: 80px;
-}
-
-.header-navigation {
+/* -------------- Navbar ------------------------------------------------*/
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -130,14 +97,16 @@ p {
   z-index: 0;
 }
 
+.navbar img {
+  width: 8rem;
+  height: auto;
+}
+
 .nav-menu-list {
   display: flex;
   flex-direction: column;
   list-style: none;
   align-items: center;
-  gap: 0.3rem;
-  margin-right: 4rem;
-  padding: 0.5rem;
   transform: translateY(-60rem);
   background-color: var(--main-grey);
   position: absolute;
@@ -152,16 +121,14 @@ p {
   transition: transform 500ms ease-in-out;
 }
 
-.header-navigation a {
+.navbar a {
   text-decoration: none;
   color: var(--main-white);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
-  /* text-shadow: 0.2rem 0.2rem #cdd2d5; */
 }
 
-.header-navigation a:hover {
-  /* text-shadow: 5px 2px var(--main-white); */
+.navbar a:hover {
   color: var(--main-yellow);
   cursor: pointer;
 }
@@ -178,190 +145,9 @@ p {
 
 .menu-button:hover {
   cursor: pointer;
-  background-color: var(--main-white);
   box-shadow: 0.2rem 0.2rem 0.3rem black;
 }
 
 .bi-list {
   font-size: 3.7rem;
-}
-
-/* -------------- Main */
-
-.profile-img {
-  border-radius: 50%;
-  background-color: var(--main-grey);
-}
-
-.div-projects,
-.div-projects,
-.div-projects-content,
-.projects-buttons,
-.div-info,
-.div-home,
-.home-text,
-.div-contact {
-  padding: 2rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.info-skills {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.info-skills div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-skills p {
-  font-weight: 600;
-}
-
-.section-projects img {
-  max-width: 800px;
-}
-
-/* -------------- Contact */
-
-.contact-text {
-  padding: 2rem 0;
-}
-
-.contact-form {
-  margin: 0 auto;
-  padding: 0 1.6rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.form-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: 1rem;
-  color: var(--main-white);
-  font-weight: 600;
-  margin: 0.2rem 0 0.8rem;
-  font-size: 1.6rem;
-}
-
-.form-input {
-  width: 100%;
-  /* max-width: 425px; */
-  padding: 1.2rem 0.12rem;
-  /* margin: 0 6px; */
-  font-size: 1.6rem;
-  outline: none;
-  color: #55595c;
-  font-weight: 400;
-  border: 0 solid #ced4da;
-  border-radius: 0;
-  background-color: #f7f7f9;
-  transition: border-color 0.15s, ease-in-out 0.15s, box-shadow 0.15s;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  outline: 0.4rem solid #c6c6c6;
-}
-
-.form-textarea {
-  width: 100%;
-  max-width: 20rem;
-  padding: 1.2rem 2.4rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #55595c;
-  background-color: #f7f7f9;
-  background-clip: padding-box;
-  border: 0 solid #ced4da;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  resize: vertical;
-}
-
-.form-button-div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social-media {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.6rem;
-}
-
-.nav-top {
-  position: fixed;
-  bottom: 2.5rem;
-  right: 0rem;
-  color: var(--main-grey);
-  font-size: 3.6rem;
-}
-
-@media (min-width: 576px) {
-  .projects-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 992px) {
-  .menu-button {
-    display: none;
-  }
-
-  .div-home {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-
-  .nav-menu-list {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1.3rem;
-    transform: translateY(0);
-    position: static;
-    background-color: var(--main-yellow);
-  }
-
-  .header-navigation a {
-    color: var(--main-grey);
-  }
-
-  .header-navigation a:hover {
-    color: var(--main-white);
-  }
-
-  .home-img {
-    min-width: 500px;
-    max-width: 600px;
-    flex-grow: 1;
-  }
-
-  .home-text {
-    flex-grow: 1;
-  }
-
-  .div-projects-content {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-  }
-  .div-projects-content p {
-    display: flex;
-    justify-content: ;
-  }
 }

@@ -23,21 +23,35 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <img src="./images/logo-no-background-small.png" alt="logo" />
+        <ul id="menu-list" class="nav-menu-list">
+          <li><a href="#home">Főoldal</a></li>
+          <li><a href="#about">Rólam</a></li>
+          <li><a href="#projects">Projektek</a></li>
+          <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <div id="button-js" class="menu-button">
+          <i id="button-icon" class="bi bi-list"></i>
+        </div>
+      </nav>
+    </header>
     <main>
-      <header>
-        <nav class="navbar">
-          <img src="./images/logo-no-background-small.png" alt="logo" />
-          <ul id="menu-list" class="nav-menu-list">
-            <li><a href="#home">Főoldal</a></li>
-            <li><a href="#about">Rólam</a></li>
-            <li><a href="#projects">Projektek</a></li>
-            <li><a href="#contact">Kapcsolat</a></li>
-          </ul>
-          <div id="button-js" class="menu-button">
-            <i id="button-icon" class="bi bi-list"></i>
-          </div>
-        </nav>
-      </header>
+      <section id="home" class="section-home">
+        <div class="home-img">
+          <img
+            src="./images/kis_tamas-head.png"
+            alt="Kis Tamás"
+            class="profile-img"
+          />
+        </div>
+        <div class="home-text">
+          <h1>Kis Tamás</h1>
+          <h2>Frontend webfejlesztő</h2>
+          <a href="" class="btn btn-primary" id="contact">Kapcsolat</a>
+        </div>
+      </section>
     </main>
     <script src="./js/main.js"></script>
   </body>

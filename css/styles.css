@@ -16,8 +16,10 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  padding-top: 8rem;
   scroll-padding-top: 10rem;
 }
 
@@ -50,13 +52,13 @@ p {
   transition: transform 100ms;
 }
 
-.btn:hover {
-  background-color: var(--main-blue);
+.btn-primary:hover {
+  /* background-color: var(--main-blue); */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: scale(1.1);
-  outline: 2px solid var(--main-blue);
-  border-color: var(--main-blue);
+  outline: 2px solid var(--main-grey);
+  border-color: var(--main-grey);
 }
 
 .btn-primary {
@@ -126,10 +128,34 @@ p {
   color: var(--main-white);
   font-weight: 700;
   font-size: 3rem;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.navbar a:after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  line-height: 1;
+  width: 100%;
+  background-color: var(--main-white);
+  transform-origin: right bottom;
+  transform: scaleX(0);
+  transition: transform 0.4s linear;
+}
+
+.navbar a:hover:after,
+.navbar a:active:after {
+  transform: scaleX(1);
+  transform-origin: left bottom;
+  transition: transform 0.4s linear;
 }
 
 .navbar a:hover {
-  color: var(--main-yellow);
+  color: var(--main-white);
   cursor: pointer;
 }
 
@@ -150,4 +176,53 @@ p {
 
 .bi-list {
   font-size: 3.7rem;
+}
+/* -------------- Home ------------------------------------------------*/
+.profile-img {
+  border-radius: 50%;
+  background-color: var(--main-grey);
+}
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* -------------- Breakpoints ------------------------------------------------*/
+@media (min-width: 992px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-menu-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    transform: translateY(0);
+    position: static;
+    background-color: var(--main-yellow);
+  }
+
+  .nav-menu-list a {
+    color: var(--main-grey);
+  }
+
+  .nav-menu-list a:hover {
+    color: var(--main-grey);
+  }
+
+  .navbar a:after {
+    background-color: var(--main-grey);
+  }
+
+  .section-home {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
 }

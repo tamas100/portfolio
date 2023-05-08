@@ -229,6 +229,7 @@ p {
 }
 /* -------------- Breakpoints ------------------------------------------------*/
 @media (min-width: 992px) {
+  /*--------------- Navbar ----------------------------------------------------*/
   .menu-button {
     display: none;
   }
@@ -253,13 +254,32 @@ p {
   .navbar a:after {
     background-color: var(--main-grey);
   }
-
+  /*------------------- Home ----------------------------------------------------*/
   .section-home {
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    padding-top: 10rem;
+    margin: 0;
   }
 
   .home-text {
     gap: 2rem;
+  }
+  /*--------------------- About -------------------------------------------------*/
+  .section-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+  }
+
+  .about-text {
+    flex-basis: 60%;
+  }
+
+  .skill-icons {
+    flex-direction: column;
+    flex-basis: 20%;
+    min-height: 50rem;
   }
 }

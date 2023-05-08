@@ -1,4 +1,4 @@
-/* ------------- Színek beállítása --------------------------------------*/
+/* ------------- Colors --------------------------------------*/
 :root {
   --main-red: #ef476f;
   --main-yellow: #ffd166;
@@ -7,7 +7,7 @@
   --main-grey: #073b4c;
   --main-white: ghostwhite;
 }
-/* -------------- Alapbeállítások --------------------------------------*/
+/* -------------- Reset --------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +19,8 @@
 html,
 body {
   scroll-behavior: smooth;
-  padding-top: 8rem;
-  scroll-padding-top: 10rem;
+  padding-top: 6rem;
+  scroll-padding-top: 11.5rem;
 }
 
 h1 {
@@ -28,17 +28,17 @@ h1 {
 }
 
 h2 {
-  font-size: 3.1rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 p {
   font-size: 2rem;
 }
-/* -------------- Gombok ------------------------------------------------*/
+/* -------------- Buttons ------------------------------------------------*/
 .btn {
   font-size: 1.2rem;
   line-height: 2.4rem;
@@ -155,7 +155,6 @@ p {
 }
 
 .navbar a:hover {
-  color: var(--main-white);
   cursor: pointer;
 }
 
@@ -187,12 +186,46 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 1.5rem;
+  margin-bottom: 10rem;
 }
 
 .home-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+}
+/* -------------- About ------------------------------------------------*/
+.section-about {
+  margin: 0 1.5rem 3rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icons i {
+  font-size: 5rem;
+}
+
+.skill-icons p {
+  font-weight: bold;
 }
 /* -------------- Breakpoints ------------------------------------------------*/
 @media (min-width: 992px) {
@@ -224,5 +257,9 @@ p {
   .section-home {
     flex-direction: row-reverse;
     justify-content: space-evenly;
+  }
+
+  .home-text {
+    gap: 2rem;
   }
 }

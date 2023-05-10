@@ -26,7 +26,10 @@
     <header>
       <!-- ************************************ Navbar ****************************************       -->
       <nav class="navbar">
-        <img src="./images/logo-no-background-small.png" alt="logo" />
+        <div class="navbar-text">
+          <img src="./images/logo-no-background-small.png" alt="logo" />
+          <p>Kis Tamás</p>
+        </div>
         <ul id="menu-list" class="nav-menu-list">
           <li><a href="#home">Főoldal</a></li>
           <li><a href="#about">Rólam</a></li>
@@ -51,7 +54,7 @@
         <div class="home-text">
           <h1>Kis Tamás</h1>
           <h2>Frontend webfejlesztő</h2>
-          <a href="" class="btn btn-primary" id="contact">Kapcsolat</a>
+          <a href="#contact" class="btn btn-primary">Kapcsolat</a>
         </div>
       </section>
       <!-- ************************************* About *******************************************       -->
@@ -103,7 +106,7 @@
           <a
             href="https://github.com/tamas100/queen"
             target="_blank"
-            class="btn btn-primary btn-icon"
+            class="btn btn-primary"
             ><i class="bi bi-github"></i></a
           ><a
             href="https://tamas100.github.io/queen/index-hu.html#top-of-page"
@@ -116,19 +119,94 @@
           <h3>To-do lista</h3>
           <img src="./images/todo.jpg" alt="To-do lista projekt" />
           <p>Gondolom ez lesz majd az egyik első saját alkalmazásom</p>
-          <a href="#" class="btn btn-primary btn-icon"
-            ><i class="bi bi-github"></i></a
+          <a href="#" class="btn btn-primary"><i class="bi bi-github"></i></a
           ><a href="#" class="btn btn-primary"> To-do lista</a>
         </div>
         <div class="project-div">
           <h3>Projekt</h3>
           <img src="./images/project.jpg" alt="Projekt" />
           <p>Projekt részletes leírása</p>
-          <a href="#" class="btn btn-primary btn-icon"
-            ><i class="bi bi-github"></i></a
+          <a href="#" class="btn btn-primary"><i class="bi bi-github"></i></a
           ><a href="#" class="btn btn-primary">Projekt</a>
         </div>
       </section>
+      <!-- ******************************************* Contact *********************************       -->
+      <section id="contact" class="section-contact">
+        <div class="contact-text">
+          <h2>Kapcsolat</h2>
+          <p class="form-text">
+            Amennyiben felkeltettem érdeklődését, vegye fel velem a kapcsolatot
+            az alábbi elérhetőségek egyikén, vagy küldjön egy üzenetet!
+          </p>
+        </div>
+        <form
+          action="https://formspree.io/f/mrgvaejo"
+          method="post"
+          class="contact-form"
+        >
+          <label class="form-label"
+            >Vezetéknév*<input
+              type="text"
+              name="last-name"
+              placeholder="Ide írja a vezetéknevét!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label"
+            >Keresztnév*<input
+              type="text"
+              name="first-name"
+              placeholder="Ide írja a keresztnevét!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label"
+            >Email-cím*<input
+              type="email"
+              name="email"
+              placeholder="Ide írja az email-címét!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label">
+            Üzenetet
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="form-input form-textarea"
+              placeholder="Ide írhatja az üzenetet..."
+            ></textarea>
+          </label>
+          <div class="form-btn">
+            <button class="btn btn-primary">
+              <i class="bi bi-send-fill"></i> Beküld
+            </button>
+          </div>
+        </form>
+        <p class="form-text">
+          A csillaggal (*) jelölt mezők kitöltése kötelező!
+        </p>
+      </section>
+      <!-- ******************************************* Footer *********************************       -->
+      <footer>
+        <p>Copyright &copy; 2023 Kis Tamás</p>
+        <div class="social-media">
+          <a href="https://github.com/tamas100" target="_blank"
+            ><i class="bi bi-github btn btn-primary"></i
+          ></a>
+          <a href="mailto:t.kis502@gmail.com" target="_blank"
+            ><i class="bi bi-envelope-fill btn btn-primary"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="bi bi-linkedin btn btn-primary"></i
+          ></a>
+        </div>
+      </footer>
+      <a href="#home"><i class="bi bi-arrow-up nav-top"></i></a>
     </main>
     <script src="./js/main.js"></script>
   </body>

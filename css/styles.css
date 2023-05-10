@@ -6,6 +6,10 @@
   --main-blue: #118ab2;
   --main-grey: #073b4c;
   --main-white: ghostwhite;
+  --light-grey: #55595c;
+  --very-light-grey: #ced4da;
+  --very-light-grey-2: #f7f7f9;
+  --light-grey-2: #c6c6c6;
 }
 /* -------------- Reset --------------------------------------*/
 * {
@@ -41,7 +45,7 @@ a {
 }
 /* -------------- Buttons ------------------------------------------------*/
 .btn {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -86,14 +90,9 @@ a {
   border-color: var(--main-red);
 }
 
-.bi-github {
-  font-size: 2.5rem;
+.bi {
+  font-size: 1.6rem;
 }
-
-.btn-icon {
-  padding: 0 1.2rem;
-}
-
 /* -------------- Navbar ------------------------------------------------*/
 .navbar {
   position: fixed;
@@ -107,6 +106,17 @@ a {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0 0.2rem 0.5rem;
   z-index: 0;
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-text p {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .navbar img {
@@ -247,7 +257,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-projects img {
+.project-div img {
   width: 100%;
 }
 
@@ -258,6 +268,89 @@ a {
   row-gap: 1.5rem;
   margin-bottom: 3rem;
 }
+/*--------------- Contact --------------------------------------------------*/
+.section-contact {
+  margin: 0 1.5rem 10rem;
+}
+
+.contact-text {
+  margin-bottom: 3rem;
+}
+
+.contact-text h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.contact-form {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-bottom: 3rem;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: var(--light-grey);
+  font-weight: bold;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.form-input {
+  padding: 1.2rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--light-grey);
+  font-weight: 400;
+  outline: none;
+  border: 0 solid var(--very-light-grey);
+  background-color: var(--very-light-grey-2);
+  transition: border-color 0.15s, ease-in-out 0.15s, box-shadow 0.15s;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-input:focus {
+  outline: 0.4rem solid var(--light-grey-2);
+}
+
+.form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-text {
+  text-align: center;
+}
+/*---------------------- Footer ---------------------------------------------*/
+footer {
+  background-color: var(--main-yellow);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 120px;
+}
+
+.social-media {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-top {
+  position: fixed;
+  bottom: 2.8rem;
+  right: 0rem;
+  font-size: 3rem;
+  background-color: var(--main-grey);
+  color: var(--main-white);
+}
 /* -------------- Breakpoints ------------------------------------------------*/
 @media (min-width: 992px) {
   /*--------------- Navbar ----------------------------------------------------*/
@@ -266,9 +359,10 @@ a {
   }
 
   .nav-menu-list {
+    max-width: 60vw;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1.3rem;
+    gap: 4rem;
     transform: translateY(0);
     position: static;
     background-color: var(--main-yellow);
@@ -312,5 +406,38 @@ a {
     flex-direction: column;
     flex-basis: 20%;
     min-height: 50rem;
+  }
+  /*---------------------- Projects ---------------------------------------------*/
+  .project-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+  }
+
+  .project-div h3 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .project-div img {
+    max-width: 40%;
+  }
+
+  .project-div p {
+    flex-basis: 45%;
+  }
+  /*---------------------- Footer ---------------------------------------------*/
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .social-media {
+    justify-content: flex-end;
+  }
+
+  .nav-top {
+    bottom: 3.8rem;
   }
 }

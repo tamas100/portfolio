@@ -350,11 +350,12 @@ a {
 footer {
   background-color: var(--main-yellow);
   padding: 1rem;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: 120px;
+  height: 12rem;
 }
 
 .social-media {
@@ -365,7 +366,7 @@ footer {
 
 .nav-top {
   position: fixed;
-  bottom: 2.8rem;
+  bottom: 0rem;
   right: 0rem;
   font-size: 3rem;
   background-color: var(--main-grey);

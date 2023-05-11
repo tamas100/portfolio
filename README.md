@@ -1,2 +1,2 @@
 # Portfólió
-Let's start over.
+Ver. 2.0

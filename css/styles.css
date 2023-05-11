@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
 }
 
 h3 {
@@ -355,7 +355,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: 12rem;
+  height: 16rem;
 }
 
 .social-media {
@@ -366,11 +366,15 @@ footer {
 
 .nav-top {
   position: fixed;
-  bottom: 0rem;
+  bottom: 1rem;
   right: 0rem;
   font-size: 3rem;
   background-color: var(--main-grey);
   color: var(--main-white);
+}
+
+.nav-top:hover {
+  border-radius: 50%;
 }
 /* -------------- Breakpoints ------------------------------------------------*/
 @media (min-width: 992px) {
@@ -460,6 +464,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 3rem;
+    height: 12rem;
   }
 
   .social-media {

@@ -371,6 +371,7 @@ footer {
   font-size: 3rem;
   background-color: var(--main-grey);
   color: var(--main-white);
+  margin-right: 1.5rem;
 }
 
 .nav-top:hover {

@@ -230,8 +230,11 @@ a {
 }
 
 .skill-icons {
+  background-color: var(--main-yellow);
   display: flex;
   justify-content: space-evenly;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .skill-icons div {
@@ -242,6 +245,7 @@ a {
 
 .skill-icons i {
   font-size: 5rem;
+  background-color: var(--main-yellow);
 }
 
 .skill-icons p {
@@ -257,16 +261,31 @@ a {
   margin-bottom: 2rem;
 }
 
-.project-div img {
-  width: 100%;
+.project-card {
+  background-color: var(--main-yellow);
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.project-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1.5rem;
-  margin-bottom: 3rem;
+.project-card img {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project-card h3 {
+  margin-top: 2rem;
+}
+
+.project-card p {
+  margin-top: 1rem;
+}
+
+.project-card-button {
+  margin-top: 2rem;
 }
 /*--------------- Contact --------------------------------------------------*/
 .section-contact {
@@ -282,9 +301,10 @@ a {
   margin-bottom: 1.5rem;
 }
 .contact-form {
+  background-color: var(--main-yellow);
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 1.6rem;
+  padding: 1.6rem 1.6rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-bottom: 3rem;
@@ -408,9 +428,13 @@ footer {
     min-height: 50rem;
   }
   /*---------------------- Projects ---------------------------------------------*/
-  .project-div {
+  .project-card {
+    max-width: 80vw;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     column-gap: 3rem;
   }
 
@@ -419,12 +443,16 @@ footer {
     text-align: center;
   }
 
-  .project-div img {
+  .project-card img {
     max-width: 40%;
   }
 
-  .project-div p {
-    flex-basis: 45%;
+  .project-card-details {
+    width: 50%;
+  }
+
+  .project-card-details p {
+    text-align: left;
   }
   /*---------------------- Footer ---------------------------------------------*/
   footer {

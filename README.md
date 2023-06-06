@@ -1,2 +1,3 @@
 # Portfólió
-Ver. 2.0
+Statikus portfólió oldal három törésponttal.  
+A [Karrierváltó Mentorprogram](https://programozaskarrier.hu/karriervalto/) projektfeladata.

@@ -1,4 +1,5 @@
-# Ellenőrzőlista a házi feladatokhoz és portfólió projektek beadásához:  
+# Ellenőrzőlista a házi feladatokhoz és portfólió projektek beadásához  
+
 [x] A HTML validációnál hibamentes a kód. [W3C Markup Validator](https://validator.w3.org/).  
 [x] Szemantikus HTML elemek használata.  
 [x] Reszponzív oldal, és legfeljebb 3 töréspont a CSS forráskód alján.  

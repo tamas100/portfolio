@@ -392,8 +392,8 @@ footer {
   /*------------------- Home ----------------------------------------------------*/
   .section-home {
     justify-content: space-evenly;
-    padding-top: 10rem;
-    margin: 0;
+    padding-top: rem;
+    margin: 4rem;
   }
 
   .profile-img {

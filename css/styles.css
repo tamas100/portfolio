@@ -195,8 +195,14 @@ a {
   font-size: 3.7rem;
 }
 /* -------------- Home ------------------------------------------------*/
+.home-img {
+  background-color: var(--main-yellow);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .profile-img {
-  border-radius: 50%;
+  margin: 2rem;
   background-color: var(--main-grey);
 }
 
@@ -204,7 +210,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1.5rem;
+  row-gap: 4.5rem;
   margin-bottom: 10rem;
 }
 
@@ -261,7 +267,7 @@ a {
 
 .project-card {
   background-color: var(--main-yellow);
-  margin: 0 auto 3rem;
+  margin: 0 auto 6rem;
   padding: 2rem;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -356,6 +362,12 @@ footer {
   height: 16rem;
 }
 
+.css-validator {
+  border: 0;
+  width: 88px;
+  height: 31px;
+}
+
 .social-media {
   width: 50vw;
   display: flex;
@@ -379,10 +391,13 @@ footer {
 @media (min-width: 768px) {
   /*------------------- Home ----------------------------------------------------*/
   .section-home {
-    flex-direction: row-reverse;
     justify-content: space-evenly;
     padding-top: 10rem;
     margin: 0;
+  }
+
+  .profile-img {
+    margin: 6rem;
   }
 
   .home-text {
@@ -491,6 +506,10 @@ footer {
     font-size: 3.3rem;
   }
   /*--------------- Navbar ----------------------------------------------------*/
+  .navbar {
+    padding: 1rem;
+  }
+
   .nav-menu-list {
     max-width: 60vw;
     flex-direction: row;
@@ -502,10 +521,6 @@ footer {
   }
 
   .navbar-text p {
-    font-size: 4rem;
-  }
-
-  .navbar a {
     font-size: 4rem;
   }
   /* -------------- Home ------------------------------------------------*/

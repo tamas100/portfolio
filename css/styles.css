@@ -393,6 +393,7 @@ footer {
   .section-home {
     justify-content: space-evenly;
     padding-top: 4rem;
+    padding-bottom: 2rem;
     margin: 0;
   }
 
@@ -524,10 +525,19 @@ footer {
     font-size: 4rem;
   }
   /* -------------- Home ------------------------------------------------*/
+  .section-home {
+    padding-bottom: 4rem;
+  }
+
   .home-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
+}
+/*--------------- Projects --------------------------------------------------*/
+.section-projects {
+  padding-top: 8rem;
+  margin: 0 1.5rem 10rem;
 }
